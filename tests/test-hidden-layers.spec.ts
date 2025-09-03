@@ -18,5 +18,4 @@ test.describe('Example of hidden layers', () =>{
         await page.locator('#blueButton').click();
     })
 
-
 })
