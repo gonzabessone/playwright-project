@@ -8,6 +8,8 @@ Son casos para practicar: validación de títulos, clicks en botones, manejo de 
 
 Todo está hecho en base a la pagina web http://www.uitestingplayground.com
 
+Nota: el archivo **playwright.config.ts** es la configuracion que usé con playwright (desactive webkit temporalmente porque tenia algunos problemas con el delay en algun test en particular)
+
 ---
 
 ## ⚙️ Instalación y ejecucion (pasos seguidos)
