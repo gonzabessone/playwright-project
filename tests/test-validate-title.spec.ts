@@ -14,4 +14,5 @@ test.describe('Hook to validate title', () =>{
     test('Validate title', async ({ page })=>{
         await expect(page).toHaveTitle(/Automation Playground/)
     })
+    
 })
