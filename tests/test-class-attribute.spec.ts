@@ -19,4 +19,5 @@ test.describe('Example of class attribute', () =>{
         await page.waitForTimeout(1000)
         await expect(page).toHaveTitle(/Class Attribute/)
 })
+    
 })
