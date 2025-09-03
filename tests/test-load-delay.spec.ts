@@ -13,5 +13,4 @@ test.describe('Load delay example',()=>{
         await expect(page).toHaveURL('http://www.uitestingplayground.com/loaddelay')
     })
 
-
 })
