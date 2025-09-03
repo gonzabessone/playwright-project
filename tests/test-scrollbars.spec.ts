@@ -15,4 +15,5 @@ test.describe('How to interact with scrollbars', ()=>{
         await expect(page.locator('#hidingButton')).toBeInViewport();
         await page.click('#hidingButton')
         })
+    
 })
