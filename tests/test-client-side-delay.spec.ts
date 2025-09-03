@@ -19,6 +19,5 @@ test.describe('Example of Client Side Delay', () =>{
         await expect(page.getByText('Data calculated on the client side.')).toBeVisible({timeout: 17000})
     })
 
-
 })
 
