@@ -19,6 +19,5 @@ test.describe('Example of Clicks on automation', () =>{
         await expect(page.locator("//button[@id='badButton']")).toHaveClass('btn btn-success')
     })
 
-
 })
 
