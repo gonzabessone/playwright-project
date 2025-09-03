@@ -21,6 +21,5 @@ test.describe('Example of AJAX data', () =>{
         await expect(textAjax).toBeVisible({timeout: 30000});
     })
 
-
 })
 
