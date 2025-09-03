@@ -19,8 +19,8 @@ test.describe('Example of Text Input', () =>{
         await page.locator("//button[@id='updatingButton']").click()
         await expect(page.getByRole('button')).toHaveText('Button that should change its name')
         await expect(page).toHaveTitle(/Text Input/)
-        
- })
+    
+    })
 
 
 })
