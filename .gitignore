@@ -1,0 +1,52 @@
+# -----------------------
+# Node
+# -----------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -----------------------
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/screenshots/
+/videos/
+/trace/
+
+# -----------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.log
+.DS_Store
+Thumbs.db
+
+# -----------------------
+# Coverage / build
+# -----------------------
+coverage/
+dist/
+build/
+
+# -----------------------
+# Environment
+# -----------------------
+.env
+.env.local
+.env.*.local
+
+# -----------------------
+# Misc / Temp
+# -----------------------
+*.tgz
+*.bak
+
+
+# -----------------------
+# pom.spec.ts
+# login-demoblaze.spec.ts
+# drafts/
