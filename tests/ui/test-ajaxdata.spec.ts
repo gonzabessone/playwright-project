@@ -1,16 +1,14 @@
-//to run : npx playwright test test-ajax-data.spec.ts --headed
+//to run : npx playwright test test-ajaxdata.spec.ts --headed
 import {test, expect} from '@playwright/test'
 
 
 
 test.describe('Example of AJAX data', () =>{
 
-
     test.beforeEach(async ({ page }) =>{
-        await page.goto('http://www.uitestingplayground.com/')
+        await page.goto('/')
+        await expect(page).toHaveTitle(/UI Test Automation Playground/)
     })
-
-
 
     test('AJAX data', async ({page})=>{
         test.setTimeout(60000)

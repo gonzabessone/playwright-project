@@ -5,7 +5,8 @@ test.describe('How to interact with scrollbars', ()=>{
 
 
     test.beforeEach(async ({ page }) =>{
-        await page.goto('http://www.uitestingplayground.com/')
+        await page.goto('/')
+        await expect(page).toHaveTitle(/UI Test Automation Playground/)
     })
 
     test('Finding a button with scrollbars', async({page})=>{
@@ -15,5 +16,4 @@ test.describe('How to interact with scrollbars', ()=>{
         await expect(page.locator('#hidingButton')).toBeInViewport();
         await page.click('#hidingButton')
         })
-    
 })

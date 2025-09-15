@@ -1,14 +1,12 @@
 //to run : npx playwright test test-dynamic-id.spec.ts --headed
 
-
 import {test,expect} from '@playwright/test'
-
 
 test.describe('Hook to validate Dynamic ID', () =>{
 
-
     test.beforeEach(async ({ page }) =>{
-        await page.goto('http://www.uitestingplayground.com/')
+        await page.goto('/')
+        await expect(page).toHaveTitle(/UI Test Automation Playground/)
     })
 
     //taking a screenshot of the button
@@ -19,6 +17,5 @@ test.describe('Hook to validate Dynamic ID', () =>{
         await expect(button1).toHaveText('Button with Dynamic ID')
         await button1.screenshot({path: 'screenshots/button_with_dynamic_id.png'})
     }) 
-    
 })
 

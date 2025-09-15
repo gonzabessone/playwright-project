@@ -33,36 +33,17 @@ export default defineConfig({
   },
 
   /* Configure projects for major browsers */
-  projects: [    
+  projects: [
     {
-      name: 'ui-tests-chrome',
-      testMatch: '**/ui/**/*.spec.ts', // Solo busca tests en la carpeta 'ui'
-      use: {
-        ...devices['Desktop Chrome'],
-        baseURL: 'http://www.uitestingplayground.com/',
-        trace: 'on-first-retry',
-      },
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
     },
+
     {
-      name: 'ui-tests-firefox',
-      testMatch: '**/ui/**/*.spec.ts',
-      use: {
-        ...devices['Desktop Firefox'],
-        baseURL: 'http://www.uitestingplayground.com/',
-        trace: 'on-first-retry',
-      },
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
     },
-    {
-      name: 'api-tests',
-      testMatch: '**/api/*.spec.ts', 
-      use: {
-        baseURL: 'https://reqres.in/api', 
-        extraHTTPHeaders: {
-          
-        },
-      },
-    },
-  
+
     /*{
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },

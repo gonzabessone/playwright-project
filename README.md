@@ -1,16 +1,23 @@
 # Playwright Tests 🚀
 
-Este repositorio tiene mis primeros **tests automatizados con Playwright + TypeScript**.  
-La idea es practicar lo básico de QA Automation y dejar registrado lo que voy aprendiendo.
+Este repositorio contiene mi **suite completa de tests automatizados con Playwright + TypeScript**  
+para la web [UI Testing Playground](http://www.uitestingplayground.com).
 
-En el repo vas a encontrar los tests organizados en `tests/`.  
-Son casos sencillos pensados para practicar: validación de títulos, clicks en botones, manejo de scrollbars, delays y elementos ocultos.
-
-Todo está hecho en base a la pagina web http://www.uitestingplayground.com
+**Actualización (septiembre 2025):**  
+Pasé de una práctica inicial de 10 pruebas a una **automatización completa de todas las secciones principales**  
+— incluyendo login, validaciones de UI, manejo de elementos dinámicos y más.
 
 ---
 
-## ⚙️ Instalación y ejecución (pasos seguidos)
+##  Cambios destacados:
+- Cobertura de **toda** la web.
+- Mejor organización de carpetas y nombres de casos.
+- Uso de fixtures y utilidades para evitar código repetido.
+- Preparado para integración continua (GitHub Actions en progreso).
+
+---
+
+##  Instalación y ejecución (pasos seguidos)
 
 Clonar el repositorio y ejecutar los comandos uno por uno en la terminal:
 
@@ -31,5 +38,5 @@ npx playwright test
 # 5) Si querés correr un test en particular (ejemplo)
 npx playwright test tests/test-class-atribute.spec.ts
 
-# 6) Para verlo en modo "headed" (con el navegador visible)
+# 6) Para verlo en modo headed (con el navegador visible)
 npx playwright test --headed

@@ -4,12 +4,10 @@ import {test, expect} from '@playwright/test'
 
 test.describe('Example of class attribute', () =>{
 
-
-
     test.beforeEach(async ({ page }) =>{
-        await page.goto('http://www.uitestingplayground.com/')
+        await page.goto('/')
+        expect(page).toHaveTitle(/UI Test Automation Playground/)
     })
-
 
 
     test('Class attribute', async ({ page }) => {
@@ -19,5 +17,4 @@ test.describe('Example of class attribute', () =>{
         await page.waitForTimeout(1000)
         await expect(page).toHaveTitle(/Class Attribute/)
 })
-    
 })
