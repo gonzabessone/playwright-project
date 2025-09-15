@@ -27,8 +27,8 @@ Clonar el repositorio y ejecutar los comandos uno por uno en la terminal:
 
 ```bash
 # 1) Clonar el repo y entrar en la carpeta
-git clone https://github.com/tu-usuario/tu-repo.git
-cd tu-repo
+git clone https://github.com/gonzabessone/playwright-project.git
+cd playwright-project
 
 # 2) Instalar dependencias del proyecto
 npm install
